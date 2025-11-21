@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pure CSS Expanding Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Expanding Cards</h1>
+      <p>Pure HTML + CSS. Click a panel to expand and reveal more detail.</p>
+    </div>
+
+    <div class="cards">
+      <!-- Card 1 -->
+      <input
+        class="card-input"
+        type="radio"
+        name="active-card"
+        id="card-1"
+        checked
+      >
+      <label class="card" for="card-1">
+        <span class="card-icon">01</span>
+        <div class="card-tag">Getting Started</div>
+        <div class="card-title">Simple, semantic structure</div>
+        <div class="card-body">
+          <p>
+            Use a hidden radio input paired with a label to control which card
+            is “active”. Flexbox handles the resizing animation, and CSS
+            transitions keep everything smooth.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="pill">No JavaScript</span>
+          <span class="indicator"></span>
+        </div>
+      </label>
+
+      <!-- Card 2 -->
+      <input
+        class="card-input"
+        type="radio"
+        name="active-card"
+        id="card-2"
+      >
+      <label class="card" for="card-2">
+        <span class="card-icon">02</span>
+        <div class="card-tag">Responsive</div>
+        <div class="card-title">Works on any screen size</div>
+        <div class="card-body">
+          <p>
+            On wider screens the cards sit side-by-side and expand in place.
+            Below 800px, the cards stack vertically and still respond to clicks
+            to reveal additional text.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="pill">Flexbox layout</span>
+          <span class="indicator"></span>
+        </div>
+      </label>
+
+      <!-- Card 3 -->
+      <input
+        class="card-input"
+        type="radio"
+        name="active-card"
+        id="card-3"
+      >
+      <label class="card" for="card-3">
+        <span class="card-icon">03</span>
+        <div class="card-tag">Customisable</div>
+        <div class="card-title">Drop into your own project</div>
+        <div class="card-body">
+          <p>
+            Swap colours, fonts and content to match your brand. You can add
+            more cards by duplicating this markup and reusing the same
+            <code>name</code> on the radio group.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="pill">Easy theming</span>
+          <span class="indicator"></span>
+        </div>
+      </label>
+    </div>
+  </div>
+</body>
+</html>
